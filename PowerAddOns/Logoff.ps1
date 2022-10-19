@@ -1,0 +1,3 @@
+function Logoff {
+    shutdown /l
+  }
